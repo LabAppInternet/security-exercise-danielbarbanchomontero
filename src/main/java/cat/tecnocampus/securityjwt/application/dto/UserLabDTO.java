@@ -4,5 +4,5 @@ import cat.tecnocampus.securityjwt.domain.Role;
 
 import java.util.Set;
 
-public record UserLabDTO(Long id, String username, String email, String password, Set<Role> role) {
+public record UserLabDTO(Long id, String username, String email, String password, Role role) {
 }

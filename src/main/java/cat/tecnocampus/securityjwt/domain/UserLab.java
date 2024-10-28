@@ -79,6 +79,8 @@ public class UserLab {
         this.roles = roles;
     }
 
+    public void setOneRole(Role role) { this.roles.add(role); }
+
     @Override
     public String toString() {
         return "UserLab{" +

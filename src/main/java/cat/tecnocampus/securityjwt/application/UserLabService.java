@@ -15,7 +15,7 @@ public class UserLabService {
         UserLab user = new UserLab();
         user.setUsername(userDTO.username());
         user.setPassword(userDTO.password());
-        user.setRoles(userDTO.role());
+        user.setOneRole(userDTO.role());
         return userLabRepository.save(user);
     }
 }
