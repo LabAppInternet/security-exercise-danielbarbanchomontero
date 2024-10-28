@@ -29,3 +29,14 @@ content-type: application/json
     client.global.set("auth_token", response.headers.valueOf("Authorization"));
     client.log("token: " + response.headers.valueOf("Authorization"));
 %}
+
+###
+POST http://localhost:8080/user/create
+content-type: application/json
+
+{
+  "username": "josep",
+  "password": "password123",
+  "email": "hola@gmail.com",
+  "role": "USER"
+}

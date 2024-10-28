@@ -1,8 +1,6 @@
 package cat.tecnocampus.securityjwt.application.dto;
 
-import cat.tecnocampus.securityjwt.domain.Role;
+import cat.tecnocampus.securityjwt.domain.ERole;
 
-import java.util.Set;
-
-public record UserLabDTO(Long id, String username, String email, String password, Role role) {
+public record UserLabDTO(String username, String email, String password, ERole role) {
 }
